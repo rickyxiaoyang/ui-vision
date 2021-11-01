@@ -1,0 +1,8 @@
+To use the square-giftcard RPA script.
+1) Change the e-gift card link to the one you need.
+2) Change the amount and promo code.
+3) Change the sender name and email (currently will be Taiyaki NYC and info@taiyakinyc.com).
+
+For the CSV:
+-There must be 2 columns. 1st is the recipient name. 2nd is the email address of the recipient.
+-Upload the csv. If the name is different, change the script's target csv.

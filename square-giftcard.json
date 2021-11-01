@@ -1,0 +1,296 @@
+{
+    "Name": "LoopCSV-GiftCards",
+    "CreationDate": "2021-11-1",
+    "Commands": [
+        {
+            "Command": "csvReadArray",
+            "Target": "cpc-gc.csv",
+            "Value": "csv",
+            "Description": ""
+        },
+        {
+            "Command": "echo",
+            "Target": "Status = ${!csvReadStatus}, line = ${!csvReadLineNumber}",
+            "Value": "",
+            "Description": ""
+        },
+        {
+            "Command": "echo",
+            "Target": "${!csvReadStatus}",
+            "Value": "",
+            "Description": ""
+        },
+        {
+            "Command": "forEach",
+            "Target": "CSV",
+            "Value": "person",
+            "Description": ""
+        },
+        {
+            "Command": "open",
+            "Target": "https://squareup.com/gift/A01DX3DBJMM7C/order",
+            "Value": "",
+            "Description": ""
+        },
+        {
+            "Command": "click",
+            "Target": "xpath=/html/body/div[2]/div[2]",
+            "Value": "",
+            "Targets": [
+                "xpath=/html/body/div[2]/div[2]",
+                "xpath=//div[2]/div[2]",
+                "css=body > div.gift-info-header > div.gift-info-header__carousel"
+            ],
+            "Description": ""
+        },
+        {
+            "Command": "click",
+            "Target": "xpath=/html/body/div[3]/form/div[2]/div[2]/div/div/input",
+            "Value": "",
+            "Targets": [
+                "xpath=/html/body/div[3]/form/div[2]/div[2]/div/div/input",
+                "xpath=//input",
+                "css=body > div.container > form > div:nth-child(2) > div.field-group__row > div > div > input"
+            ],
+            "Description": ""
+        },
+        {
+            "Command": "type",
+            "Target": "xpath=/html/body/div[3]/form/div[2]/div[2]/div/div/input",
+            "Value": "CPC10",
+            "Targets": [
+                "xpath=/html/body/div[3]/form/div[2]/div[2]/div/div/input",
+                "xpath=//input",
+                "css=body > div.container > form > div:nth-child(2) > div.field-group__row > div > div > input"
+            ],
+            "Description": ""
+        },
+        {
+            "Command": "click",
+            "Target": "xpath=/html/body",
+            "Value": "",
+            "Targets": ["xpath=/html/body", "xpath=//body", "css=body"],
+            "Description": ""
+        },
+        {
+            "Command": "click",
+            "Target": "xpath=/html/body/div[3]/form/div[2]/div[2]/div/button",
+            "Value": "",
+            "Targets": [
+                "xpath=/html/body/div[3]/form/div[2]/div[2]/div/button",
+                "xpath=//div[2]/div[2]/div/button",
+                "css=body > div.container > form > div:nth-child(2) > div.field-group__row > div > button"
+            ],
+            "Description": ""
+        },
+        {
+            "Command": "click",
+            "Target": "xpath=/html/body/div[3]/form/div/div[4]/div/button[5]/div",
+            "Value": "",
+            "Targets": [
+                "xpath=/html/body/div[3]/form/div/div[4]/div/button[5]/div",
+                "xpath=//button[5]/div",
+                "css=body > div.container > form > div:nth-child(1) > div.field-group__row > div > button.segmented-control__segment.segmented-control__segment--smaller > div.segmented-control__segment__label"
+            ],
+            "Description": ""
+        },
+        {
+            "Command": "click",
+            "Target": "xpath=/html/body/div[3]/form/div/div[5]/div/input",
+            "Value": "",
+            "Targets": [
+                "xpath=/html/body/div[3]/form/div/div[5]/div/input",
+                "xpath=//input",
+                "css=body > div.container > form > div:nth-child(1) > div:nth-child(5) > div > input"
+            ],
+            "Description": ""
+        },
+        {
+            "Command": "type",
+            "Target": "xpath=/html/body/div[3]/form/div/div[5]/div/input",
+            "Value": "10",
+            "Targets": [
+                "xpath=/html/body/div[3]/form/div/div[5]/div/input",
+                "xpath=//input",
+                "css=body > div.container > form > div:nth-child(1) > div:nth-child(5) > div > input"
+            ],
+            "Description": ""
+        },
+        {
+            "Command": "click",
+            "Target": "xpath=/html/body",
+            "Value": "",
+            "Targets": ["xpath=/html/body", "xpath=//body", "css=body"],
+            "Description": ""
+        },
+        {
+            "Command": "click",
+            "Target": "id=ember6",
+            "Value": "",
+            "Targets": [
+                "id=ember6",
+                "xpath=//*[@id=\"ember6\"]",
+                "xpath=//input[@id='ember6']",
+                "xpath=//div[2]/div/input",
+                "css=#ember6"
+            ],
+            "Description": ""
+        },
+        {
+            "Command": "type",
+            "Target": "id=ember6",
+            "Value": "Taiyaki NYC",
+            "Targets": [
+                "id=ember6",
+                "xpath=//*[@id=\"ember6\"]",
+                "xpath=//input[@id='ember6']",
+                "xpath=//div[2]/div/input",
+                "css=#ember6"
+            ],
+            "Description": ""
+        },
+        {
+            "Command": "click",
+            "Target": "id=ember7",
+            "Value": "",
+            "Targets": [
+                "id=ember7",
+                "xpath=//*[@id=\"ember7\"]",
+                "xpath=//input[@id='ember7']",
+                "xpath=//div[2]/div/div[2]/div/input",
+                "css=#ember7"
+            ],
+            "Description": ""
+        },
+        {
+            "Command": "type",
+            "Target": "id=ember7",
+            "Value": "info@taiyakinyc.com",
+            "Targets": [
+                "id=ember7",
+                "xpath=//*[@id=\"ember7\"]",
+                "xpath=//input[@id='ember7']",
+                "xpath=//div[2]/div/div[2]/div/input",
+                "css=#ember7"
+            ],
+            "Description": ""
+        },
+        {
+            "Command": "click",
+            "Target": "id=ember8",
+            "Value": "",
+            "Targets": [
+                "id=ember8",
+                "xpath=//*[@id=\"ember8\"]",
+                "xpath=//input[@id='ember8']",
+                "xpath=//div[5]/div/div/div[2]/div/input",
+                "css=#ember8"
+            ],
+            "Description": ""
+        },
+        {
+            "Command": "type",
+            "Target": "id=ember8",
+            "Value": "${person[0]}",
+            "Targets": [
+                "id=ember8",
+                "xpath=//*[@id=\"ember8\"]",
+                "xpath=//input[@id='ember8']",
+                "xpath=//div[5]/div/div/div[2]/div/input",
+                "css=#ember8"
+            ],
+            "Description": ""
+        },
+        {
+            "Command": "click",
+            "Target": "id=ember9",
+            "Value": "",
+            "Targets": [
+                "id=ember9",
+                "xpath=//*[@id=\"ember9\"]",
+                "xpath=//input[@id='ember9']",
+                "xpath=//div[5]/div[2]/div/div[2]/div/input",
+                "css=#ember9"
+            ],
+            "Description": ""
+        },
+        {
+            "Command": "type",
+            "Target": "id=ember9",
+            "Value": "${person[1]}",
+            "Targets": [
+                "id=ember9",
+                "xpath=//*[@id=\"ember9\"]",
+                "xpath=//input[@id='ember9']",
+                "xpath=//div[5]/div[2]/div/div[2]/div/input",
+                "css=#ember9"
+            ],
+            "Description": ""
+        },
+        {
+            "Command": "click",
+            "Target": "id=ember10",
+            "Value": "",
+            "Targets": [
+                "id=ember10",
+                "xpath=//*[@id=\"ember10\"]",
+                "xpath=//textarea[@id='ember10']",
+                "xpath=//textarea",
+                "css=#ember10"
+            ],
+            "Description": ""
+        },
+        {
+            "Command": "type",
+            "Target": "id=ember10",
+            "Value": "Enjoy your Taiyaki NYC gift card! Please read: this gift card is only redeemable at Taiyaki NYC's Baxter St location (119 Baxter Street)",
+            "Targets": [
+                "id=ember10",
+                "xpath=//*[@id=\"ember10\"]",
+                "xpath=//textarea[@id='ember10']",
+                "xpath=//textarea",
+                "css=#ember10"
+            ],
+            "Description": ""
+        },
+        {
+            "Command": "click",
+            "Target": "css=body > div.gift-info-header > div.gift-info-header__carousel > div.card-carousel__carousel.card-carousel__carousel--arrows > div:nth-child(1) > svg",
+            "Value": "",
+            "Targets": [
+                "xpath=/html/body/div[2]/div[2]/div/div/svg",
+                "css=body > div.gift-info-header > div.gift-info-header__carousel > div.card-carousel__carousel.card-carousel__carousel--arrows > div:nth-child(1) > svg"
+            ],
+            "Description": ""
+        },
+        {
+            "Command": "click",
+            "Target": "xpath=/html/body/div[3]/form/div[8]/div/button",
+            "Value": "",
+            "Targets": [
+                "xpath=/html/body/div[3]/form/div[8]/div/button",
+                "xpath=//button[@type='submit']",
+                "xpath=//div[8]/div/button",
+                "css=body > div.container > form > div:nth-child(8) > div > button"
+            ],
+            "Description": ""
+        },
+        {
+            "Command": "click",
+            "Target": "xpath=/html/body/div[4]/div/button/span",
+            "Value": "",
+            "Targets": [
+                "xpath=/html/body/div[4]/div/button/span",
+                "xpath=//span",
+                "css=body > div.wide-container > div > button > span"
+            ],
+            "Description": ""
+        },
+        {
+            "Command": "end",
+            "Target": "",
+            "Value": "",
+            "Description": ""
+        }
+    ]
+}

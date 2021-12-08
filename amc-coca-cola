@@ -1,0 +1,111 @@
+{
+  "Name": "AMC Entry",
+  "CreationDate": "2021-12-8",
+  "Commands": [
+    {
+      "Command": "store",
+      "Target": "1",
+      "Value": "i",
+      "Description": ""
+    },
+    {
+      "Command": "label",
+      "Target": "START",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "true",
+      "Value": "!statusOK",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "true",
+      "Value": "!ErrorIgnore",
+      "Description": ""
+    },
+    {
+      "Command": "while_v2",
+      "Target": "${i} <= 100",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "open",
+      "Target": "https://us.coca-cola.com/amoe?promotionId=8417_amc_iw_63987",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "waitForPageToLoad",
+      "Target": "",
+      "Value": "3",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"mainContent\"]/main/div/div/div/div/div/div[4]/button",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"mainContent\"]/main/div/div/div/div/div/div[4]/button",
+        "xpath=//div[4]/button",
+        "css=#mainContent > main > div > div.widgetContainer.aem-GridColumn--default--none.aem-GridColumn--phone--none.aem-GridColumn--phone--12.aem-GridColumn.aem-GridColumn--default--10.aem-GridColumn--offset--phone--0.aem-GridColumn--offset--default--1 > div > div > div.amoe__auth > div.amoe__myentry > button"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "gotoIf_v2",
+      "Target": "!${!statusOK}",
+      "Value": "START",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"mainContent\"]/main/div/div/div/div/div/div/div[2]/button",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"mainContent\"]/main/div/div/div/div/div/div/div[2]/button",
+        "xpath=//div/div/div/div/div/div[2]/button",
+        "css=#mainContent > main > div > div.widgetContainer.aem-GridColumn--default--none.aem-GridColumn--phone--none.aem-GridColumn--phone--12.aem-GridColumn.aem-GridColumn--default--10.aem-GridColumn--offset--phone--0.aem-GridColumn--offset--default--1 > div > div > div.design-package-container.cmp-style-loaded > div > div:nth-child(4) > button"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "waitForPageToLoad",
+      "Target": "",
+      "Value": "5",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"mainContent\"]/main/div",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"mainContent\"]/main/div",
+        "xpath=//main/div",
+        "css=#mainContent > main > div"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "gotoIf_v2",
+      "Target": "!${!statusOK}",
+      "Value": "START",
+      "Description": ""
+    },
+    {
+      "Command": "executeScript_Sandbox",
+      "Target": "return Number (${i}) + 1;",
+      "Value": "i",
+      "Description": ""
+    },
+    {
+      "Command": "end",
+      "Target": "",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}
